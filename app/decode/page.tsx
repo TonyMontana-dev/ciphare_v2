@@ -11,7 +11,7 @@ export default function Decode() {
   const [loading, setLoading] = useState(false); // Loading state
   const [error, setError] = useState<string | null>(null); // Error state
 
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000"; // Default API base URL
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || '/api'; // Default API base URL
 
   // Handle the decryption process
   const handleDecrypt = async () => {
